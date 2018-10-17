@@ -32,12 +32,8 @@ const content = fs
     const input = await page.$('input[name="composer_photo[]"]');
     await input.uploadFile(imagePath);
     await page.waitFor(5000);
-    let disabled = true;
-    while (disabled)
-      disabled = await page.$eval(
-        'button[data-testid=react-composer-post-button]',
-        button => button.disabled
-      );
+    await page.waitForSelector('button[data-testid=react-composer-post-button]:enabled');
+    await page.waitFor(1000);
     await page.click('button[data-testid=react-composer-post-button]');
     await page.waitFor(5000);
   }
