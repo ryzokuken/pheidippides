@@ -1,0 +1,19 @@
+{
+  "name": "pheidippides",
+  "version": "1.0.0",
+  "description": "Automate posting to Facebook Groups",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryzokuken/pheidippides.git"
+  },
+  "author": "Ujjwal Sharma <usharma1998@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ryzokuken/pheidippides/issues"
+  },
+  "homepage": "https://github.com/ryzokuken/pheidippides#readme"
+}
